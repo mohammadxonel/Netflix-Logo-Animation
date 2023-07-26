@@ -23,3 +23,10 @@
     stop-opacity: 0;
 }
 
+body {
+    height: 100vh;
+    background: black;
+    overflow: hidden;
+    transition: background 0.4s;
+}
+
