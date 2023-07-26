@@ -4,3 +4,10 @@
     --shadow-intensity: 0.6;
     --UIControlsSize: 30px;
 }
+
+/* --- Netflix SVG --- */
+
+.base {
+    fill: var(--primary-colour);
+    transition: fill 0.4s;
+}
