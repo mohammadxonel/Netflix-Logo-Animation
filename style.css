@@ -11,3 +11,15 @@
     fill: var(--primary-colour);
     transition: fill 0.4s;
 }
+
+.shadow-start {
+    stop-color: var(--shadow-colour);
+    stop-opacity: var(--shadow-intensity);
+    
+}
+
+.shadow-end {
+    stop-color: var(--shadow-colour);
+    stop-opacity: 0;
+}
+
