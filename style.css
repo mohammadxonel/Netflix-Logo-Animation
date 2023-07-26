@@ -30,3 +30,14 @@ body {
     transition: background 0.4s;
 }
 
+.netflix-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+  
+svg {
+    margin: 15vmin;
+}
+
