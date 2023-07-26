@@ -48,3 +48,21 @@ svg {
     justify-content: center;
     align-items: center;
 }
+
+.theme {
+    width: var(--UIControlsSize);
+    height: var(--UIControlsSize);
+    margin: 20px;
+    border-radius: 50%;
+    border: 3px solid white;
+    background: lightgray;
+    transition: transform 0.2s;
+    cursor: pointer;
+    overflow: hidden;
+}
+  
+.theme:hover {
+    transform: scale(1.1);
+}
+
+
