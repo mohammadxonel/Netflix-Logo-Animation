@@ -41,3 +41,10 @@ svg {
     margin: 15vmin;
 }
 
+/* --- UI Controls --- */
+
+.themesContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
