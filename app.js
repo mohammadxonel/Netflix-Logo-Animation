@@ -30,4 +30,14 @@ t_tl
   .to("#T2-shadow", {opacity: 0, duration: 0.82})
 
 
+/* --- F --- */
+
+const f_tl = gsap.timeline();
+f_tl
+  .from("#F1", {scaleX: 0, duration: 0.15}, 0)
+  .from("#F2-base", {scaleY: 0, duration: 0.33}, 0.1)
+  .from("#F3", {scaleX: 0, duration: 0.15}, 0.28)
+  .to("#F2-shadow", {opacity: 0, duration: 0.86})
+
+
 /**/
