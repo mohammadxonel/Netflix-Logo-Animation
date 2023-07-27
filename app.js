@@ -21,4 +21,13 @@ e_tl
   .to("#E1-shadow, #E2-shadow", {opacity: 0, duration: 0.8}, 0)
 
 
+/* --- T --- */
+
+const t_tl = gsap.timeline();
+t_tl
+  .from("#T1", {scaleX: 0, duration: 0.1}, 0)
+  .from("#T2-base", {scaleY: 0, duration: 0.25}, 0.1)
+  .to("#T2-shadow", {opacity: 0, duration: 0.82})
+
+
 /**/
