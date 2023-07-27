@@ -50,4 +50,11 @@ l_tl
   .to("#L1-shadow", {opacity: 0, duration: 0.83})
 
 
+/* --- I --- */
+
+const i_tl = gsap.timeline();
+i_tl
+  .from("#I", {scaleY: 0, transformOrigin: "50% 100%", duration: 0.18}, 0)
+
+
 /**/
