@@ -9,4 +9,16 @@ const n_tl = gsap.timeline();
    
  
  
+/* --- E --- */
+
+const e_ogShape = "M255.1 171.6V208.2L250.5 208.5L250 172L255.1 171.6Z";
+const e_tl = gsap.timeline();
+e_tl
+  .from("#E1-base", {morphSVG:{shape: e_ogShape, type: "linear"}, opacity: 0, duration: 0.15}, 0)
+  .from("#E2-base", {scaleY: 0, transformOrigin: "50% 100%", duration: 0.1}, 0.11)
+  .from("#E3", {scaleX: 0, duration: 0.06}, 0.21)
+  .from("#E4", {scaleX: 0, duration: 0.18}, 0.27)
+  .to("#E1-shadow, #E2-shadow", {opacity: 0, duration: 0.8}, 0)
+
+
 /**/
