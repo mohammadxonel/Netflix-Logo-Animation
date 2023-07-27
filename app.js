@@ -57,4 +57,14 @@ i_tl
   .from("#I", {scaleY: 0, transformOrigin: "50% 100%", duration: 0.18}, 0)
 
 
-/**/
+/* --- X --- */
+
+const x1_ogShape = "M733.1 216.8L771.5 220.8L772.5 218.5L734.5 213.5L733.1 216.8Z";
+const x2_ogShape = "M737 0L738 2.5H777.5L776.5 0H737Z";
+const x_tl = gsap.timeline();
+x_tl
+  .from("#X1", {morphSVG:{shape: x1_ogShape, type: "linear", shapeIndex: 2}, duration: 0.63}, 0)
+  .from("#X1", {opacity: 0, duration: 0.1,}, 0)
+  .from("#X2-base", {morphSVG:{shape: x2_ogShape, type: "linear", shapeIndex: 2}, duration: 0.53}, 0.11)
+  .from("#X2-base", {opacity: 0, duration: 0.01,}, 0.11)
+  .to("#X2-shadow", {opacity: 0, duration: 1.3}, 0)
