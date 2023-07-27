@@ -40,4 +40,14 @@ f_tl
   .to("#F2-shadow", {opacity: 0, duration: 0.86})
 
 
+/* --- L --- */
+
+const l_ogShape = "M540.5 167.5L546 167.781V204.371L540.5 204.1V167.5Z";
+const l_tl = gsap.timeline();
+l_tl
+  .from("#L1-base", {scaleY: 0, duration: 0.22}, 0)
+  .from("#L2", {morphSVG:{shape: l_ogShape, type: "linear"}, opacity: 0, duration: 0.1}, 0.2)
+  .to("#L1-shadow", {opacity: 0, duration: 0.83})
+
+
 /**/
