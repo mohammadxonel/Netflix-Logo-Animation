@@ -156,54 +156,35 @@ x_tl
     duration: 1.3
   }, 0)
 
-const x1_ogShape = "M733.1 216.8L771.5 220.8L772.5 218.5L734.5 213.5L733.1 216.8Z";
-const x2_ogShape = "M737 0L738 2.5H777.5L776.5 0H737Z";
-const x_tl = gsap.timeline();
-x_tl
-  .from("#X1", {
-    morphSVG: {
-      shape: x1_ogShape,
-      type: "linear",
-      shapeIndex: 2
-    },
-    duration: 0.63
-  }, 0)
-  .from("#X1", {
-    opacity: 0,
-    duration: 0.1,
-  }, 0)
-  .from("#X2-base", {
-    morphSVG: {
-      shape: x2_ogShape,
-      type: "linear",
-      shapeIndex: 2
-    },
-    duration: 0.53
-  }, 0.11)
-  .from("#X2-base", {
-    opacity: 0,
-    duration: 0.01,
-  }, 0.11)
-  .to("#X2-shadow", {
-    opacity: 0,
-    duration: 1.3
-  }, 0)
-
 //Movement Timeline//
 const movement_tl = gsap.timeline();
 movement_tl
-  .from("svg", {opacity: 0, duration: 0.7}, 0)
-  .from("svg", {xPercent:50, left:"50%",  duration: 1.9,  ease: CustomEase.create("custom", "M0,0,C0.358,0.144,0.098,1,1,1")}, 0.7)
+  .from("svg", {
+    opacity: 0,
+    duration: 0.7
+  }, 0)
+  .from("svg", {
+    xPercent: 50,
+    left: "50%",
+    duration: 1.9,
+    ease: CustomEase.create("custom", "M0,0,C0.358,0.144,0.098,1,1,1")
+  }, 0.7)
 
 
 //Exit Timeline//
 const exit_tl = gsap.timeline();
 exit_tl
-  .to("svg", {opacity: 0, duration: 0.5})
+  .to("svg", {
+    opacity: 0,
+    duration: 0.5
+  })
 
 
 //Master Timeline//
-const master_tl = gsap.timeline({repeat: -1, repeatDelay: 1});
+const master_tl = gsap.timeline({
+  repeat: -1,
+  repeatDelay: 1
+});
 master_tl
   .add((movement_tl), 0)
   .add((n_tl), 0.7)
@@ -225,19 +206,36 @@ const body = document.querySelector("body");
 
 
 // --- Colours --- //
-const colours = [
-    {theme: "#E50914", bg: "black"},
-    {theme: "white", bg: "#E50914"},
-    {theme: "#CFFFE9", bg: "#002E19"}
+const colours = [{
+    theme: "#E50914",
+    bg: "black"
+  },
+  {
+    theme: "white",
+    bg: "#E50914"
+  },
+  {
+    theme: "#CFFFE9",
+    bg: "#002E19"
+  }
 ];
 
 // --- Setting the OG document colours --- //
-for(i = 0; i < themes.length; i++){
-    themes[i].style.backgroundColor = colours[i].theme;
-    themes[i].querySelector(".bg-colour").style.background = colours[i].bg;
-  }
-  
-  document.documentElement.style.setProperty('--primary-colour', colours[0].theme);
-  document.documentElement.style.setProperty('--shadow-colour', colours[0].bg);
-  body.style.backgroundColor = colours[0].bg;
-  
+for (i = 0; i < themes.length; i++) {
+  themes[i].style.backgroundColor = colours[i].theme;
+  themes[i].querySelector(".bg-colour").style.background = colours[i].bg;
+}
+
+document.documentElement.style.setProperty('--primary-colour', colours[0].theme);
+document.documentElement.style.setProperty('--shadow-colour', colours[0].bg);
+body.style.backgroundColor = colours[0].bg;
+
+
+// --- click events --- // 
+for (t = 0; t < themes.length; t++) {
+  themes[t].addEventListener("click", function () {
+    document.documentElement.style.setProperty('--primary-colour', this.style.backgroundColor);
+    document.documentElement.style.setProperty('--shadow-colour', this.querySelector(".bg-colour").style.backgroundColor);
+    body.style.backgroundColor = this.querySelector(".bg-colour").style.backgroundColor;
+  });
+}
