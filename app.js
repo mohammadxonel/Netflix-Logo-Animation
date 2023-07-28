@@ -189,14 +189,29 @@ x_tl
     duration: 1.3
   }, 0)
 
-//Movement Timeline
+//Movement Timeline//
 const movement_tl = gsap.timeline();
 movement_tl
   .from("svg", {opacity: 0, duration: 0.7}, 0)
   .from("svg", {xPercent:50, left:"50%",  duration: 1.9,  ease: CustomEase.create("custom", "M0,0,C0.358,0.144,0.098,1,1,1")}, 0.7)
 
 
-//Exit Timeline
+//Exit Timeline//
 const exit_tl = gsap.timeline();
 exit_tl
   .to("svg", {opacity: 0, duration: 0.5})
+
+
+//Master Timeline//
+const master_tl = gsap.timeline({repeat: -1, repeatDelay: 1});
+master_tl
+  .add((movement_tl), 0)
+  .add((n_tl), 0.7)
+  .add((e_tl), 0.8)
+  .add((t_tl), 1.08)
+  .add((f_tl), 1.18)
+  .add((l_tl), 1.33)
+  .add((i_tl), 1.63)
+  .add((x_tl), 1.7)
+  .add((exit_tl), 6)
+
