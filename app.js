@@ -195,3 +195,8 @@ movement_tl
   .from("svg", {opacity: 0, duration: 0.7}, 0)
   .from("svg", {xPercent:50, left:"50%",  duration: 1.9,  ease: CustomEase.create("custom", "M0,0,C0.358,0.144,0.098,1,1,1")}, 0.7)
 
+
+//Exit Timeline
+const exit_tl = gsap.timeline();
+exit_tl
+  .to("svg", {opacity: 0, duration: 0.5})
