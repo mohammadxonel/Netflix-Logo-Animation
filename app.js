@@ -222,3 +222,11 @@ const theme2 = document.querySelector("#theme2");
 const theme3 = document.querySelector("#theme3");
 const themes = document.querySelectorAll(".theme");
 const body = document.querySelector("body");
+
+
+// --- Colours --- //
+const colours = [
+    {theme: "#E50914", bg: "black"},
+    {theme: "white", bg: "#E50914"},
+    {theme: "#CFFFE9", bg: "#002E19"}
+];
