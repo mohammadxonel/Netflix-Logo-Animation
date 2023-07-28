@@ -230,3 +230,14 @@ const colours = [
     {theme: "white", bg: "#E50914"},
     {theme: "#CFFFE9", bg: "#002E19"}
 ];
+
+// --- Setting the OG document colours --- //
+for(i = 0; i < themes.length; i++){
+    themes[i].style.backgroundColor = colours[i].theme;
+    themes[i].querySelector(".bg-colour").style.background = colours[i].bg;
+  }
+  
+  document.documentElement.style.setProperty('--primary-colour', colours[0].theme);
+  document.documentElement.style.setProperty('--shadow-colour', colours[0].bg);
+  body.style.backgroundColor = colours[0].bg;
+  
