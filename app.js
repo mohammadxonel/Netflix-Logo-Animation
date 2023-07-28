@@ -215,3 +215,10 @@ master_tl
   .add((x_tl), 1.7)
   .add((exit_tl), 6)
 
+
+// --- UI CONTROLS --- //
+const theme1 = document.querySelector("#theme1");
+const theme2 = document.querySelector("#theme2");
+const theme3 = document.querySelector("#theme3");
+const themes = document.querySelectorAll(".theme");
+const body = document.querySelector("body");
