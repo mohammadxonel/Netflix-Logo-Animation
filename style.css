@@ -3,53 +3,52 @@
     --shadow-colour: black;
     --shadow-intensity: 0.6;
     --UIControlsSize: 30px;
-}
-
-/* --- Netflix SVG --- */
-
-.base {
+  }
+  
+  /* ---------- Netflix SVG ---------- */
+  
+  .base {
     fill: var(--primary-colour);
     transition: fill 0.4s;
-}
-
-.shadow-start {
+  }
+  
+  .shadow-start {
     stop-color: var(--shadow-colour);
     stop-opacity: var(--shadow-intensity);
     
-}
-
-.shadow-end {
+  }
+  .shadow-end {
     stop-color: var(--shadow-colour);
     stop-opacity: 0;
-}
-
-body {
+  }
+  
+  body {
     height: 100vh;
     background: black;
     overflow: hidden;
     transition: background 0.4s;
-}
-
-.netflix-container {
+  }
+  
+  .netflix-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 80vh;
-}
+  }
   
-svg {
+  svg {
     margin: 15vmin;
-}
-
-/* --- UI Controls --- */
-
-.themesContainer {
+  }
+  
+  /* ---------- UI Controls ---------- */
+  
+  .themesContainer {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.theme {
+  }
+  
+  .theme {
     width: var(--UIControlsSize);
     height: var(--UIControlsSize);
     margin: 20px;
@@ -59,15 +58,15 @@ svg {
     transition: transform 0.2s;
     cursor: pointer;
     overflow: hidden;
-}
+  }
   
-.theme:hover {
+  .theme:hover {
     transform: scale(1.1);
-}
-
-.bg-colour {
+  }
+  
+  .bg-colour {
     height: 100%;
     width: 50%;
     transform-origin: 100% 50%;
     transform: rotate(225deg);
-}
+  }
