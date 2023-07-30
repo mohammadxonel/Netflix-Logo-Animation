@@ -2,6 +2,7 @@
 
 
 ### Project Live :
+https://mohammadxxali.github.io/Netflix-Logo-Animation/
 
 
 -------
