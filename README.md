@@ -2,12 +2,12 @@
 
 
 ### Project Live :
-https://mohammadxxali.github.io/Netflix-Logo-Animation/
+https://mohammadxonel.github.io/Netflix-Logo-Animation/
 
 
 -------
 
 ### Project Screenshot
-![](https://github.com/mohammadxxali/Netflix-Logo-Animation/blob/main/Screenshot-1.png)
-![](https://github.com/mohammadxxali/Netflix-Logo-Animation/blob/main/Screenshot-2.png)
-![](https://github.com/mohammadxxali/Netflix-Logo-Animation/blob/main/Screenshot-3.png)
+![](https://github.com/mohammadxonel/Netflix-Logo-Animation/blob/main/Screenshot-1.png)
+![](https://github.com/mohammadxonel/Netflix-Logo-Animation/blob/main/Screenshot-2.png)
+![](https://github.com/mohammadxonel/Netflix-Logo-Animation/blob/main/Screenshot-3.png)
